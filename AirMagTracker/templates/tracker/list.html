@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %} Testttt {% endblock %}
+
+{% block content %}
+
+	{% if race_list %}
+		{% for a in race_list %}
+			<a href="">{{a.race}}</a>
+		{% endfor %}
+	{% else %}
+		No))
+	{% endif %}
+
+{% endblock %}
